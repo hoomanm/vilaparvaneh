@@ -2,44 +2,65 @@
 <RelativeLayout 
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/app_default_component_size"
+    android:layout_height="match_parent"
     android:enabled="false"
     android:id="@+id/custom_actionbar_relativelayout_main"
     android:background="@color/actionbar_background"
      >
 
-    <Button	
+    <ImageButton
         android:id="@+id/actionbar_button_drawer_layout"
-        style="@style/button_small"
-        android:layout_alignParentLeft="true"
-        android:layout_width="@dimen/app_default_component_size_small"
-        android:layout_height="@dimen/app_default_component_size_small"
-        />
-       <!--   android:layout_width="wrap_content"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_alignParentLeft="true" 
         android:padding="10dp"
         android:background="@android:color/transparent"
-        android:textColor="@android:color/white"
-        android:textSize="18sp"
-        --> 
-
-    <Button
-        android:id="@+id/actionbar_button_filter"
-        style="@style/button_small"
-        android:layout_alignParentRight="true"
-        android:layout_width="@dimen/app_default_component_size_small"
-        android:layout_height="@dimen/app_default_component_size_small"
+        android:src="@drawable/drawer_icon"
         />
-    <!-- 
+    <RadioGroup 
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+        <ImageButton 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/drawer_icon"
+            android:background="@android:color/transparent"
+            android:checked="true"
+            />
+        <ImageButton 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/drawer_icon"
+            android:background="@android:color/transparent"
+            />
+        <ImageButton 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/drawer_icon"
+            android:background="@android:color/transparent"
+            />
+    </RadioGroup>
+
+    <ImageButton
+        android:id="@+id/actionbar_button_filter"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_alignParentRight="true"
         android:padding="10dp"
-        android:paddingRight="7dp"
+        android:paddingRight="8dp"
         android:background="@android:color/transparent"
         android:textColor="@android:color/white"
+        android:src="@drawable/drawer_icon"
         android:textSize="18sp"
         />
- -->
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/black"
+        android:layout_alignParentBottom="true"
+        />
 </RelativeLayout>
